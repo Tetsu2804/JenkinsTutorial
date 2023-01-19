@@ -2,11 +2,22 @@ pipeline {
 
     agent any
   
-    stage {
+    stages {
     
       stage("build"){
         
           steps {
+          }
+      }    
+      stage("test"){
+          
+          steps{
+          }
+          
+      }
+      stage("deploy"){
+           
+          steps{
           }
       }
    }
