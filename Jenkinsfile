@@ -11,7 +11,7 @@ pipeline {
     
       stage("build"){
           steps {
-              echo 'Welcome to my pipeline ${name} '
+              echo "Welcome to my pipeline ${name}"
           }
       }    
     }
