@@ -2,26 +2,18 @@ pipeline {
 
     agent any
   
+    parameters {
+        string defaultValue: 'Tran Anh', description: 'Choose your name', name: 'name'
+    }
+
+    
     stages {
     
       stage("build"){
           steps {
-              echo 'Hello my pipeline'
+              echo 'Welcome to my pipeline ${name} '
           }
       }    
-      stage("test"){
-          
-          steps{
-               echo 'Hello my test pipeline'
-          }
-          
-      }
-      stage("deploy"){
-           
-          steps{
-              echo 'Hello my deploy pipeline'
-          }
-      }
     }
 }
    
